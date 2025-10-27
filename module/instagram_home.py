@@ -48,7 +48,7 @@ def dismiss_not_now_prompts(page, attempts=3):
 
 @lru_cache(maxsize=1)
 def load_credentials(env_path: Path | None = None):
-    username = os.getenv("USERNAME")
+    username = os.getenv("INSTAGRAM_USERNAME")
     password = os.getenv("PASSWORD")
 
     if username and password:
